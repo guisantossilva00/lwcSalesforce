@@ -1,0 +1,21 @@
+.input {
+    width: 40%; 
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #AE272A;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9c3031;
+}

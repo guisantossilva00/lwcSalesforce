@@ -1,0 +1,10 @@
+<template>
+    <lightning-card  title="mostrar texto alterando o input " >
+        <p>lwcName: fraseComponentInput</p>
+        <div >
+            <p>{componentFrase}</p>
+            <lightning-input label="Name" value={componentFrase} onchange={changeHandler}></lightning-input>
+            
+        </div>
+    </lightning-card>
+</template>

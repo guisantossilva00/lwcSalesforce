@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="mostrar e esconder texto com click ou caixa de seleção">
+    <p>lcwName: exibeTexto</p>
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="checkbox" label="Mostrar texto" chacked={exibeTexto} onchange={textoVisivel}></lightning-input>
+
+            <div if:true={exibeTexto} class="slds-var-m-top_medium">
+                <p>Exibindo texto</p>
+            </div>
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Calculadora de Soma">
+        <div class="slds-p-around_medium">
+            <input class="input"  type="number" onchange={handleNumber1Change}></input>
+            <!--Onchange: atributo onchange que está vinculado a uma função JavaScript. Quando o valor do campo é alterado, a função correspondente chamada.-->
+            <input class="input"  type="number" onchange={handleNumber2Change}></input>
+            <button class="btn" onclick={calculateSum}>Calcular Soma</button>
+            <!--onclick: atributo onclick que está vinculado a uma função JavaScript chamada calculateSum.-->
+            <p>Resultado da Soma: {result}</p>
+
+        </div>
+    </lightning-card>
+</template>
