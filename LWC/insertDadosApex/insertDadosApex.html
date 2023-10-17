@@ -1,0 +1,31 @@
+<template>
+    <lightning-card class="slds-var-p-around_medium" title="Inserindo dados com Apex">
+        <div class="slds-var-m-left_small">
+            <lightning-button label="Abrir Modal" onclick={openModal}></lightning-button>
+            
+            <template if:true={isModalOpen}>
+                <div class="modal-backdrop slds-backdrop slds-backdrop_open"></div>
+                <section class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <header class="slds-modal__header">
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium">Adicionar Nova Conta</h2>
+                        </header>
+                        <div class="slds-modal__content slds-var-p-around_medium">
+                            <lightning-input label="Nome da Conta" value={nomeConta} onchange={lidarComMudancaNomeConta} required></lightning-input>
+                            
+                            
+                            <lightning-combobox label="Indústria" value={industry} options={industryOptions} onchange={lidarComMudancaIndustria}></lightning-combobox>
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning-button label="Fechar" class="slds-var-m-right_small" onclick={closeModal}></lightning-button>
+                            <lightning-button variant="brand" label="Salvar" class="slds-var-m-left_small" onclick={salvarConta}></lightning-button>
+                        </footer>
+                    </div>
+                </section>
+            </template>
+
+            
+        </div>
+    </lightning-card>
+    
+</template>

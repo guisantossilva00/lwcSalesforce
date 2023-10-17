@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Atualizando o registro usando apex">
+        <div class="slds-var-p-around_medium">
+            <p>Id do registro: {recordId}</p>
+
+            <div class="slds-form-element">
+                <label for="telefone" class="slds-form-element__label" >Telefone</label>
+                <input
+                    name="telefone"
+                    type="text"
+                    placeholder="Ex.. 112323123"
+                    class="slds-input"/>
+            </div>
+            
+            <div class="slds-m-around_medium">
+                <lightning-button 
+                    label="Salvar"
+                    variant="success"
+                    title="Salvar o telefone"
+                    onclick={salvarTelefone}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>    
+</template>
